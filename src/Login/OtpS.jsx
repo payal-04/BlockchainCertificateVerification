@@ -37,7 +37,7 @@ class OtpS extends Component {
     this.state = { random: rand };
     console.log(this.state.random);
     const { accounts } = this.props;
-    const_key = ProcessingInstruction.env.VAR_KEY;
+    const_key = process.env.VAR_KEY;
     var to = "/topics/" + "a";
 
     var notification = {
